@@ -1,0 +1,8 @@
+todo list
+
+<ul>
+  <li *ngFor="let todo of todos">
+    <input type="checkbox" [(ngModel)]="todo.completed">
+    {{todo.name}}
+   </li>
+</ul>

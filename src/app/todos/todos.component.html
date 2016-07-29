@@ -1,0 +1,10 @@
+<todo-list [todos]=todos></todo-list>
+
+<div>
+  <input type="text" [(ngModel)]="newTodo.name">
+  <button type="submit" (click)="addTodo(newTodo)">Add todo</button>
+</div>
+
+<div>
+  <button type="submit" (click)="removeCompletedTodos()">Remove completed todos</button>
+</div>
